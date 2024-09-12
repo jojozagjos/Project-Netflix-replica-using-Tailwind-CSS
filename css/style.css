@@ -4,7 +4,7 @@
     font-family:sans-serif, "Fira Sans";
     overflow: hidden;
     opacity: 1;
-    transition: 3s ease-in;
+    transition: 0.2s ease-in;
   }
 
 body {
