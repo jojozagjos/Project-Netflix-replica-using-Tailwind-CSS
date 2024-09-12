@@ -9,18 +9,23 @@
   <link rel="icon" type="image/x-icon" href="images/Netflix-Logo-PNG-Transparent-Image.png">
 </head>
 <body>
-  <div class="container">
-    <img class="logo" src="images/netflix_PNG12.png" alt="Netflix" width="400" height="500">
-    <div class="info">
-      <button type="button" class="lang"></button>
-      <button type="button" class="signin"></button>
+  <img class="backgroundimage brightness-50 absolute inset-0 w-full h-full object-cover" src="images/netflix-background-9.jpg" alt="Netflix" width="400" height="500">
+    <div class="topcontent">
+      <img class="logo " src="images/netflix_PNG12.png" alt="Netflix" width="400" height="500">
+      <div class="info top-10 right-20 drop-shadow-lg text-neutral-50 text-lg">
+        <button type="button" class="lang p-2 px-10 mr-2 hover:bg-blue-400 t">English</button>
+        <button type="button" class="signin p-2 px-5 hover:bg-red-700">Sign In</button>
+      </div>
     </div>
-    <div class="main text-neutral-50">
-      <h1>Unlimited movies, TV shows, and more.</h1>
-      <h3>Watch anywhere. Cancel anytime.</h3>
-      <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-
-      <input type="email" class="email" name="email" placeholder="Email address">
+  <div class="container flex items-center justify-center h-screen mx-auto text-center">
+    <div class="main text-neutral-50 drop-shadow-lg font-bold">
+      <h1 class="text-7xl">Unlimited movies, TV shows, and more.</h1>
+      <h4 class="text-4xl mt-4">Watch anywhere. Cancel anytime.</h3>
+      <h4 class="text-4xl mt-8">Ready to watch? Enter your email to create or restart your membership.</h3>
+      <div class="email mt-10">
+        <input type="email" class="email pl-2 py-6 px-80" name="email" placeholder="Email address" required>
+        <label class="getstarted py-7 px-20 hover:bg-red-700 mou" for="email">Get started</label>
+      </div>
     </div>
   </div>
 

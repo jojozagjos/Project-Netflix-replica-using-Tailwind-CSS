@@ -1,23 +1,72 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: "Fira Sans", sans-serif;
-    /* overflow: hidden; */
+    font-family:sans-serif, "Fira Sans";
+    overflow: hidden;
+    opacity: 1;
+    transition: 3s ease-in;
   }
 
 body {
     background-color: #000000;
     opacity: 1;
-    animation: fadein 1s ease-in;
+    animation: fadein 1s linear;
 }
 
-.container {
+@media screen and (max-width: 480px) {
+    * {
+        overflow: scroll;
+      }
+    .info {
+        margin-left: 75px;
+    }
+    .getstarted {
+        padding: 10px 20px;
+        margin-top: 200px;
+    }
+}
+
+.topcontent {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 30px;
+    position: relative;
+}
+
+.info {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.lang {
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.signin {
+    background-color: #e40913;
+    border-radius: 5px;
+}
+
+.getstarted {
+    background-color: #e40913;
+    margin-left: -10px;
+}
+
+.email {
+    border-radius: 5px;
+}
+
+/* .container {
     background-image: url("../images/netflix-background-9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-}
+} */
 
 @keyframes fadein {
     0% {
