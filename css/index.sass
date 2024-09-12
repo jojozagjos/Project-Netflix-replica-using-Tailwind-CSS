@@ -8,6 +8,19 @@ body
 $bg-color: #000000
 $base-color: #e40913
 
+.creator
+	color: white
+	display: flex
+	position: relative
+	font-size: 15px
+	width: 100vw
+	left: 20px
+	bottom: -25vh
+	animation-name: creatorbye
+	animation-delay: 3s
+	animation-duration: 5s
+	animation-timing-function: ease-in
+
 #container
 	display: flex
 	flex-direction: column
@@ -825,3 +838,9 @@ $base-color: #e40913
 		background-color: rgba($base-color, .5)
 	100%
 		background-color: rgba($base-color, .0)
+
+@keyframes creatorbye
+	0%
+		transform: translate(0)
+	100%
+		transform: translate(-9000px)
